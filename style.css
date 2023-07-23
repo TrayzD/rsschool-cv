@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+i {
+  font-weight: 300;
+}
+body {
+  background-color: #d7fff3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 22px;
+}
+.wrapper {
+  max-width: 960px;
+  background-color: #0000003a;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px -9px 19px -3px rgba(148, 148, 148, 0.72);
+  -moz-box-shadow: 0px -9px 19px -3px rgba(148, 148, 148, 0.72);
+  box-shadow: 0px -9px 19px -3px rgba(148, 148, 148, 0.72);
+}
+.wrapper .left {
+  background-color: #0000003a;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper .left .photo {
+  width: 100%;
+  height: 280px;
+}
+.wrapper .left .photo img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .rigth {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+.wrapper .rigth .about {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+.main__contacts {
+  padding: 15px;
+}
+.main__contacts h3 {
+  text-align: center;
+}
+.main__contacts a,
+.main__contacts a:visited {
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+}
+.main__contacts a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.main__contacts a:hover:after,
+.main__contacts a:focus:after {
+  width: 100%;
+}
+.main__contacts li {
+  margin: 10px 5px;
+}
+.skills {
+  background-color: #0000003a;
+  width: 100%;
+  padding: 15px 0;
+}
+.skills h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #181818;
+}
+.skills .skills__list {
+  display: flex;
+  justify-content: space-around;
+}
+.skills .skills__list img {
+  width: 70px;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+.skills .skills__list img:hover {
+  filter: grayscale(0%);
+}
+.languages {
+  padding: 15px;
+}
+.languages h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.languages table tr td {
+  padding: 3px;
+  color: #3d3d3d;
+}
+.languages table tr th {
+  text-align: start;
+  padding-right: 5px;
+}
+.languages table .active {
+  color: #000000;
+  font-weight: bold;
+}
+.languages .lang_level {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 400;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.languages .lang_level:hover {
+  opacity: 0.4;
+}
+.languages img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about__me h2 {
+  text-align: left;
+  font-size: 32px;
+  margin: 0 0 0 20px;
+  font-weight: 400;
+}
+.about__me .name {
+  text-align: left;
+  font-size: 64px;
+  margin: 0 0 0 20px;
+  font-weight: 400;
+}
+.main__about {
+  margin: 5px 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.about__content {
+  margin: 0px 0;
+}
+.line {
+  margin: 5px 0;
+  border-bottom: 1px solid #000000;
+}
+.edu__ex {
+  margin: 5px 20px;
+}
+.edu__ex .education__item {
+  margin: 10px 0;
+}
+.edu__ex .education__item p {
+  margin: 4px 0;
+}
+.main__experience h3 {
+  font-size: 22px;
+}
+.main__experience .experience__item {
+  margin: 10px 0;
+}
+.main__experience .experience__item p {
+  margin: 4px 0;
+}
+.code__example {
+  margin: 5px 20px;
+  width: 95%;
+  height: 300px;
+}
+.code__example pre {
+  margin-top: 10px;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #222222;
+  color: #aaaaaa;
+}
+.footer {
+  margin-bottom: 20px;
+  width: 960px;
+  height: 120px;
+  -webkit-box-shadow: 0px 9px 19px -3px rgba(148, 148, 148, 0.72);
+  -moz-box-shadow: 0px 9px 19px -3px rgba(148, 148, 148, 0.72);
+  box-shadow: 0px 9px 19px -3px rgba(148, 148, 148, 0.72);
+  background-color: #00000057;
+}
+.footer .footer_wrapper {
+  margin: 0 auto;
+  height: 120px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img {
+  height: 90px;
+}
+.footer span {
+  font-size: 24px;
+}
